@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "SmartPlant Sarawak",
+    "slug": "smartplant-sarawak",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "description": "Identify and map endangered plants in Sarawak using AI-powered plant identification",
+        "splash": {
+          "image": "./assets/icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#6B8E6B"
+        },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.smartplant.sarawak",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to take photos of plants for identification.",
+        "NSPhotoLibraryUsageDescription": "This app accesses your photo library to select plant images for identification.",
+        "NSLocationWhenInUseUsageDescription": "This app uses location services to map plant sightings."
+      }
+    },
+    "android": {
+          "adaptiveIcon": {
+            "foregroundImage": "./assets/adaptive-icon.png",
+            "backgroundColor": "#6B8E6B"
+          },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.smartplant.sarawak",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow SmartPlant Sarawak to access your camera to take photos of plants for identification."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow SmartPlant Sarawak to access your photos to select plant images for identification."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow SmartPlant Sarawak to use your location to map plant sightings."
+        }
+      ]
+    ],
+    "extra": {
+      "EXPO_PUBLIC_API_BASE_URL": "http://172.17.1.177:8080"
+    }
+  }
+}
