@@ -1,4 +1,25 @@
+# SmartPlant Sarawak — Computer Vision & Retraining Part
+
+---
+
+## AI Pipeline Demos
+
+| AI Microservice | Demo Video |
+| :--- | :---: |
+| **1. Plant Species Classification** | [Watch Demo](https://www.youtube.com/shorts/ho49PtWbN0M) |
+| **2. Non-Plant Upload Filter** | [Watch Demo](https://www.youtube.com/shorts/ZHPoj2rXJqY) |
+| **3. Manual Retraining Pipeline** | [Watch Demo](https://www.youtube.com/watch?v=V3PyQshoA-U) |
+
+---
+
+## Technical Contributions
+
+* Automated web scraping with Selenium via DuckDuckGo and iNaturalist to aggregate, clean, and augment scarce image datasets for endangered Sarawak plant species.
+* Built a binary classifier (96.6% accuracy) to filter out non-plant uploads, routing valid images to a fine-tuned MobileNetV2 species classifier with 86.2% test accuracy.
+* Served predictions to mobile app via FastAPI endpoint for real-time photo inference and developed a manual retraining pipeline to incorporate expert-verified images.
+
 # SmartPlant Sarawak - Complete Documentation
+
 
 **Version:** 1.0.0  
 **Last Updated:** November 21, 2025  
