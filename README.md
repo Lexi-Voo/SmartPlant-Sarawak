@@ -18,8 +18,43 @@
 * Built a binary classifier (96.6% accuracy) to filter out non-plant uploads, routing valid images to a fine-tuned MobileNetV2 species classifier with 86.2% test accuracy.
 * Served predictions to mobile app via FastAPI endpoint for real-time photo inference and developed a manual retraining pipeline to incorporate expert-verified images.
 
-# SmartPlant Sarawak - Complete Documentation
+---
 
+## Model Evaluation & Metrics
+
+### 1. Non-Plant Upload Filter (Binary Classifier)
+*Filters out invalid or non-plant images before routing valid photos to the species classifier.*
+
+| Training & Validation Performance | Key Evaluation Metrics |
+| :---: | :--- |
+| <img src="assets/non_plat_classifier_acc_loss.png" width="450"/> | • **Test Accuracy:** 96.6%<br>• **Task:** Binary Classification (Plant vs. Non-Plant)<br>• **Purpose:** Eliminates non-plant image noise to protect downstream species inference. |
+
+---
+
+### 2. Initial vs. Augmented Dataset Baseline (MobileNetV2)
+*Comparison demonstrating performance gains before and after applying data augmentation.*
+
+| Baseline (Initial Dataset) | Augmented Dataset |
+| :---: | :---: |
+| <img src="assets/initial_acc_loss.png" width="380"/> | <img src="assets/augmented_acc_loss.png" width="380"/> |
+| **Accuracy & Loss Curves** | **Accuracy & Loss Curves** |
+| <img src="assets/initial_confusion_matrix.png" width="380"/> | <img src="assets/augmented_confusion_matrix.png" width="380"/> |
+| **Confusion Matrix** | **Confusion Matrix (86.2% Test Accuracy)** |
+
+---
+
+### 3. Retraining Metrics
+*Evaluation metrics after feeding expert-verified user images back through the retraining pipeline.*
+
+| Retraining Accuracy & Loss |
+| :---: |
+| <img src="assets/retraining_acc_loss.png" width="380"/> |
+
+---
+
+> **Note:** The section below contains the complete end-to-end repository documentation (covering Database, API, AI module, and React Native Mobile App setup).
+
+# SmartPlant Sarawak - Complete Documentation
 
 **Version:** 1.0.0  
 **Last Updated:** November 21, 2025  
