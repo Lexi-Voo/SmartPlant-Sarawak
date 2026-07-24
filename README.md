@@ -46,9 +46,9 @@
 ### 3. Retraining Metrics
 *Evaluation metrics after feeding expert-verified user images back through the retraining pipeline.*
 
-| Retraining Accuracy & Loss |
-| :---: |
-| <img src="assets/retraining_acc_loss.png" width="380"/> |
+| Retraining Accuracy & Loss | Retraining Confusion Matrix |
+| :---: | :---: |
+| <img src="assets/retraining_acc_loss.png" width="380"/> | <img src="assets/retraining_confusion_matrix.png" width="380"/> |
 
 ---
 
